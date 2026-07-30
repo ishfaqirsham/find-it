@@ -1,6 +1,6 @@
 <?php
 // ==========================================
-// FoundItem - an item someone has reported as found
+// FoundItem - an item someone has reported as found will be shown
 // ==========================================
 require_once __DIR__ . '/Item.php';
 
