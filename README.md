@@ -1,4 +1,4 @@
-# Lost and Found Item System — OOP Edition
+# Find-iT. — OOP Edition
 
 A campus lost-and-found web app built with **PHP (OOP), a small custom
 MVC-style framework, and MySQL**. Users can report lost items, report
