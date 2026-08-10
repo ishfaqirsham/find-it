@@ -1,4 +1,4 @@
-# Find-iT. — OOP Edition
+# Find-iT.🔍
 
 A campus lost-and-found web app built with **PHP (OOP), a small custom
 MVC-style framework, and MySQL**. Users can report lost items, report
@@ -16,7 +16,7 @@ role can moderate posts and fully manage user accounts (add/edit/delete).
 | **Factory Pattern** | `UserFactory::create($row)` reads `user_type` from the database and returns the correct subclass automatically. |
 | **Small Framework** | A single front controller (`index.php`) + `Router` dispatches `?page=X&action=Y` to the right `Controller` method — similar in spirit to how Laravel/CodeIgniter route requests, just much smaller. |
 
-## User Roles
+## User Roles 🕵️‍♂️
 
 - **Student / Staff** — register themselves, post lost/found items, search, view contact info.
 - **Admin** — a separate actor (not just a flag). Can:
@@ -28,7 +28,7 @@ role can moderate posts and fully manage user accounts (add/edit/delete).
 Admin accounts are not available on the public registration form — they're
 created by an existing Admin through **Manage Users → Add New User**.
 
-## Folder Structure
+## Folder Structure 🗂️
 
 ```
 lost-found-oop/
@@ -62,7 +62,7 @@ lost-found-oop/
 └── index.php                    # front controller (single entry point)
 ```
 
-## Setup Instructions (XAMPP / WAMP / MAMP)
+## Setup Instructions (XAMPP / WAMP / MAMP) 🛠️
 
 1. Copy the `lost-found-oop` folder into your server's web root
    (e.g. `C:\xampp\htdocs\` on Windows, `/opt/lampp/htdocs/` on Linux/Mac).
@@ -74,7 +74,7 @@ lost-found-oop/
 5. Make sure `uploads/` is writable by the web server.
 6. Visit `http://localhost/lost-found-oop/index.php`.
 
-## Demo Logins
+## Demo Logins ⚙️🔧
 
 | Role | Email | Password |
 |---|---|---|
@@ -82,7 +82,7 @@ lost-found-oop/
 | Student | nimal.perera@student.edu.lk | password123 |
 | Staff | ruwan.fernando@staff.edu.lk | password123 |
 
-## Validation
+## Validation 🎛️
 
 - **Client-side (JavaScript, `assets/js/validation.js`):** instant feedback —
   required fields, email format, phone must be exactly 10 digits, password
@@ -92,7 +92,7 @@ lost-found-oop/
   boundary. Passwords are hashed with `password_hash()`; all queries use
   PDO prepared statements to prevent SQL injection.
 
-## Ideas for Further Improvement
+## Ideas for Further Improvement 🚀🤖
 
 - Add an `AbstractRepository` base class if you want to practice inheritance
   further (both `UserRepository` and `ItemRepository` share a similar shape).
